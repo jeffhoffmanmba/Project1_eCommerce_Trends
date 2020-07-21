@@ -1,0 +1,6 @@
+et_idx,et_code,et_desc,et_unit
+1,E_SM,CV of Sales - Monthly,PCT
+2,E_IM,CV of Inventories - Monthly,PCT
+3,E_IR,SE of Inventories/Sales Ratio,RATIO
+4,E_MPCIM,SE of Inventories - Monthly Percent Change,PCT
+5,E_MPCSM,SE of Sales - Monthly Percent Change,PCT
