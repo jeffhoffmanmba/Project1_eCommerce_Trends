@@ -1,0 +1,3 @@
+ICT = information and communication technology
+
+Euro Chart title = Percentage of the ICT sector on GDP
