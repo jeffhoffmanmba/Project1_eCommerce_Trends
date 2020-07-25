@@ -1,0 +1,66 @@
+cat_idx,cat_code,cat_desc,cat_indent
+1,44X72,44X72: Retail Trade and Food Services,0
+2,44Y72,"44Y72: Retail Trade and Food Services, ex Auto",0
+3,44Z72,"44Z72: Retail Trade and Food Services, ex Gas",0
+4,44W72,"44W72: Retail Trade and Food Services, ex Auto and Gas",0
+5,44000,44000: Retail Trade,0
+6,4400A,"4400A: Retail Trade, ex Auto",0
+7,4400C,4400C: GAFO,0
+8,441,441: Motor Vehicle and Parts Dealers,0
+9,441X,"4411,4412: Auto and Other Motor Vehicles",0
+10,4411,4411: Automobile Dealers,0
+11,44111,44111: New Car Dealers,0
+12,44112,44112: Used Car Dealers,0
+13,4413,"4413: Automotive Parts, Acc., and Tire Stores",0
+14,4423X,"4423X: Furniture, Home Furn, Electronics, and Appliance Stores",0
+15,442,442: Furniture and Home Furnishings Stores,0
+16,4421,4421: Furniture Stores,0
+17,4422,4422: Home Furnishings Stores,0
+18,44221,44221: Floor Covering Stores,0
+19,442299,442299: All Other Home Furnishings Stores,0
+20,443,443: Electronics and Appliance Stores,0
+21,443141,443141: Household Appliance Stores,0
+22,443142,443142: Electronics Stores,0
+23,444,444: Building Mat. and Garden Equip. and Supplies Dealers,0
+24,4441,4441: Building Mat. and Supplies Dealers,0
+25,44412,44412: Paint and Wallpaper Stores,0
+26,44413,44413: Hardware Stores,0
+27,445,445: Food and Beverage Stores,0
+28,4451,4451: Grocery Stores,0
+29,44511,44511: Supermarkets and Other Grocery (Except Convenience) Stores,0
+30,4453,"4453: Beer, Wine, and Liquor Stores",0
+31,446,446: Health and Personal Care Stores,0
+32,44611,44611: Pharmacies and Drug Stores,0
+33,447,447: Gasoline Stations,0
+34,448,448: Clothing and Clothing Access. Stores,0
+35,4481,4481: Clothing Stores,0
+36,44811,44811: Men's Clothing Stores,0
+37,44812,44812: Women's Clothing Stores,0
+38,44814,44814: Family Clothing Stores,0
+39,44819,44819: Other Clothing Stores,0
+40,4482,4482: Shoe Stores,0
+41,44831,44831: Jewelry Stores,0
+42,451,"451: Sporting Goods, Hobby, Musical Instrument, and Book Stores",0
+43,45111,45111: Sporting Goods Stores,0
+44,45112,"45112: Hobby, Toy, and Game Stores",0
+45,451211,451211: Book Stores,0
+46,452,452: General Merchandise Stores,0
+47,4521E,4521: Department Stores,0
+48,452112E,452112: Discount Dept. Stores,0
+49,452111E,452111: Department Stores (Excl. Discount Department Stores),0
+50,4529,4529: Other General Merchandise Stores,0
+51,45291,45291: Warehouse Clubs and Superstores,0
+52,45299,45299: All Other Gen. Merchandise Stores,0
+53,453,453: Miscellaneous Store Retailers,0
+54,4532,"4532: Office Supplies, Stationery, and Gift Stores",0
+55,45321,45321: Office Supplies and Stationery Stores,0
+56,45322,"45322: Gift, Novelty, and Souvenir Stores",0
+57,45330,4533: Used Merchandise Stores,0
+58,454,454: Nonstore Retailers,0
+59,4541,4541: Electronic Shopping and Mail-order Houses,0
+60,45431,45431: Fuel Dealers,0
+61,722,722: Food Services and Drinking Places,0
+62,7224,7224: Drinking Places,0
+63,7225,7225: Restaurants and Other Eating Places,0
+64,722511,722511: Full Service Restaurants,0
+65,72251X,72251X: Limited Service Eating Places,0
