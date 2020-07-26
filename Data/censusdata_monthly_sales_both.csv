@@ -1,4 +1,4 @@
-month,year,ecomm sales,instore sales,ecomm %,total sales
+month,year,ecomm salesMIL$,instore sales(MIL$),ecomm %,total sales
 Jan,2010,19565,230542,7.82,250107
 Feb,2010,18419,227215,7.5,245634
 Mar,2010,21629,255997,7.79,277626
