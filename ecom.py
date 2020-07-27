@@ -7,6 +7,8 @@ def get_canada_df_m(filename = "data/(2016-2020)Online&Retail_Sales(CA).csv"):
     df = pd.read_csv(filename)
     return_df = pd.DataFrame(columns = ["Date", "Overall Retail", "E-Commerce", "E-Shopping and Mail-Order Houses", "Retail Growth(%)", "E-Commerce Growth(%)",
                                         "E-Shopping Growth(%)", "E-Commerce Share(%)", "E-Shopping Share(%)"])
+    month_dict = {"01" : "Jan", "02" : "Feb", "03" : "Mar", "04" : "Apr", "05" : "May", "06" : "Jun",
+                  "07" : "Jul", "08" : "Aug", "09" : "Sep", "10" : "Oct", "11" : "Nov", "12" : "Dec"}
 
     # Set variables. US $1 is CA $1.34, UOM is CA $1,000, Returning UOM is US $1 mil
     cur_ex = 1.34
@@ -18,8 +20,12 @@ def get_canada_df_m(filename = "data/(2016-2020)Online&Retail_Sales(CA).csv"):
 
     # Loop through dates
     for date in df.loc[:, "REF_DATE"].unique():
-        # Convert date type from "%Y-%m" to "%m/%d/%Y" to make consistent with the date type on us census data
-        return_df.loc[idx_cnt, "Date"] = date.split("-")[1] + "/1/" + date.split("-")[0]
+        # Convert date type to make consistent with the date type on us census data
+        month = date.split("-")[1]
+        year = date.split("-")[0]
+        for k, v in month_dict.items():
+            month = month.replace(k, v)
+        return_df.loc[idx_cnt, "Date"] = month + "/" + year
         # Convert uom from CAD 1,000 to USD 1mil
         return_df.loc[idx_cnt, "Overall Retail"] = group_df.loc[(date, "Retail trade [44-453]"), "VALUE"] * uom / r_uom / cur_ex
         return_df.loc[idx_cnt, "E-Commerce"] = group_df.loc[(date, "Retail E-commerce sales"), "VALUE"] * uom / r_uom  / cur_ex
@@ -94,7 +100,9 @@ def get_korea_df_m(filename1 = "data/(2015-2020)Retail_Sales(KR).csv", filename2
     # Read csv files and create a returning dataframe
     retail_df = pd.read_csv(filename1)
     ecom_df = pd.read_csv(filename2)
-    
+
+    month_dict = {"01" : "Jan", "02" : "Feb", "03" : "Mar", "04" : "Apr", "05" : "May", "06" : "Jun",
+                  "07" : "Jul", "08" : "Aug", "09" : "Sep", "10" : "Oct", "11" : "Nov", "12" : "Dec"}   
     # Set variables. US $1 is about KRW 1200, UOM is KRW 1 mil, Returning UOM is US $1 mil
     cur_ex = 1200
 
@@ -110,12 +118,13 @@ def get_korea_df_m(filename1 = "data/(2015-2020)Retail_Sales(KR).csv", filename2
     # Merge
     return_df = pd.merge(on = "Date", left = ret_tot_df, right = ecom_tot_df)
 
-    # Convert date type from "%Y. %m" to "%m/%d/%Y" to make consistent with the date type on us census data
+    # Convert date type to make consistent with the date type on us census data
     return_df["Date"] = return_df.loc[:, "Date"].str.replace(".", "")
     return_df["Month"] = return_df.loc[:, "Date"].str.split(" ", n = 2, expand = True)[1]
-    return_df["Month"] = return_df["Month"].str.replace("0", "")
+    for k, v in month_dict.items():
+        return_df["Month"] = return_df["Month"].str.replace(k, v)
     return_df["Year"] = return_df.loc[:, "Date"].str.split(" ", n = 1, expand = True)[0]
-    return_df["Date"] = return_df["Month"] + "/1/" + return_df["Year"]
+    return_df["Date"] = return_df["Month"] + "/" + return_df["Year"]
     return_df = return_df.drop(columns = ["Month", "Year"])
 
     # Convert uom from KRW 1 mil to USD 1mil

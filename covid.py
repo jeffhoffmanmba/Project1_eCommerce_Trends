@@ -48,13 +48,13 @@ def get_num_of_cases(countries, dur_months = 5):
     month_date = df["Date"].str.split("-", n = 2, expand = True)[1]
     month_year = df["Date"].str.split("-", n = 2, expand = True)[0]
 
-    month_dict = {"01":"Jan.", "02":"Feb.", "03":"Mar.", "04":"Apr.", "05":"May", "06":"Jun.",
-                  "07":"Jul.", "08":"Aug.", "09":"Sep.", "10":"Oct.", "11":"Nov.", "12":"Dec."}
+    month_dict = {"01":"Jan", "02":"Feb", "03":"Mar", "04":"Apr", "05":"May", "06":"Jun",
+                  "07":"Jul", "08":"Aug", "09":"Sep", "10":"Oct", "11":"Nov", "12":"Dec"}
 
     for k, v in month_dict.items():
         month_date = month_date.str.replace(k, v)
 
-    df["Date"] = month_date + ", " + month_year
+    df["Date"] = month_date + "/" + month_year
 
     group_df = df.groupby(["Country", "Date"]).max()
     idx = 0
