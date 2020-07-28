@@ -2,8 +2,7 @@ import requests
 import pandas as pd
 from datetime import datetime, timedelta
 
-# CA: canada, CN: china, KR: south-korea
-# Don't try the US. It will be freezing because the US data volume is too huge.
+# CA: canada, CN: china, KR: south-korea, US: united-states
 # get_num_of_cases(countries, dur_months, start_year)
 #   countries -> String, if you want to get multiple countries data, you can put a list of countries
 #   start_month -> optional, the default value is 1
@@ -74,5 +73,3 @@ def get_num_of_cases(countries, dur_months = 5):
         idx += 1
 
     return return_df
-
-countries = ["united-states", "south-korea", "china", "canada"]
