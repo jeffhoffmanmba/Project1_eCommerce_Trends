@@ -1,5 +1,0 @@
-- In 2010, less than 5% of retail sales happened online. 
-During this decade of eCommerce growth, that number more than doubled to 10.7%. 
-US eCommerce sales more than tripled. Worldwide, eCommerce growth has been even more striking. 
-Since 2010, global eCommerce sales have increased by a mind-boggling 600%.
-- smaller data sets can be as time consuming to work with as larger
