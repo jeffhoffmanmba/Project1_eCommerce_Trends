@@ -1,3 +1,4 @@
+- positive correlation between global GDP and global e_commerce Sales
 - From 2010 to 2019 global eCommerce retail sales increased from $572 US billion to $2982 US billion, an increase of 421%
 - In 2010, less than 5% of retail sales happened online; during this decade of eCommerce growth, that number more than doubled to 10.7% 
 - From 2010 to 2019 global eCommerce retail sales increased from $572 US billion to $2982 US billion, an increase of 421%
