@@ -1,0 +1,6 @@
+dt_idx,dt_code,dt_desc,dt_unit
+1,SM,Sales - Monthly,MLN$
+2,IM,Inventories - Monthly,MLN$
+3,IR,Inventories/Sales Ratio,RATIO
+4,MPCIM,Inventories - Monthly Percent Change,PCT
+5,MPCSM,Sales - Monthly Percent Change,PCT
